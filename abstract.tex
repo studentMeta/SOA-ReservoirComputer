@@ -1,0 +1,18 @@
+\begin{abstract}
+    \textbf{Abstract:}
+
+    \vspace{0.5cm}
+
+        Reservoir Computing (RC) is a machine learning approach for modeling complex, non-linear dynamical systems. However, its application to real-time digital audio processing is severely constrained by algorithmic time complexity $\mathcal{O}(N)$. This literature review evaluates the feasibility of using RC as a black-box paradigm to emulate audio distortion under strict constraints: a standard 44.1 kHz sampling rate and a latency strictly below 15 ms. Starting from the foundational models of Jaeger and Maass Echo State Networks (ESNs) and Liquid State Machines (LSMs) we trace the evolution of the RC paradigm towards more computationally efficient architectures.
+
+    \vspace{0.5cm}
+
+        While the $\mathcal{O}(N^2)$ time complexity and memory capacity of early models makes them unsuitable for high-frequency audio streams, advanced architectures successfully bypass these limitations. Specifically, the Cascaded Delay-Line Reservoir Computer (DLRC) and the deep Time-Delay Reservoir Computer (deepTRC) provide an architecture achieving real-time emulation with algorithmic delays as low as 0.11 ms. Finally, we examine recent innovations, such as Next Generation Reservoir Computing (NG-RC), to identify future research directions for real-time audio signal processing.
+
+\end{abstract}
+
+\section*{Acknowledgements}
+
+    I would like to express my deepest gratitude to my supervisor, Marvyn Gulina, for his guidance throughout this project. His benevolent supervision, his patience, and the clarity of his explanations have been of invaluable help in guiding me through the complex concepts of \textit{Reservoir Computing}. 
+
+

@@ -1,0 +1,24 @@
+
+\section{Introduction}
+
+This state-of-the-art review focuses on the Reservoir Computing (RC) paradigm and its various modifications, with a specific emphasis on real-time audio and signal distortion. Specifically, we will explore which reservoir computing model is best suited for computing real-time audio distortion.
+
+\vspace{0.5cm}
+
+In the field of digital audio signal processing, modeling effects such as the distortion of a guitar amplifier or the restoration of non-linearly distorted signals requires capturing complex, highly non-linear, and time-dependent dynamics \cite{Keuninckx2017RealTime}.
+
+\vspace{0.5cm}
+
+In this context, the \textbf{Reservoir Computing (RC)} paradigm represents a significant technological breakthrough. Introduced independently in the early 2000s by Jaeger under the names Echo State Networks (ESN) \cite{Jaeger10ESN} and  by Maass with his Liquid State Machines (LSM) \cite{maass2002realtime}, RC compared to other RNN drastically simplifies sequential prediction. Its core principle relies on a dynamic "reservoir" consisting of a recurrent network with fixed internal connections. This reservoir acts as a dynamic non-linear system that projects the temporal input signal into a spatial one while maintaining a fading memory of the input history. Training is restricted to the output layer (readout) using simple linear regression \cite{Jaeger10ESN}. This ensures fast and computationally inexpensive learning that cannot get stuck in local minima \cite{Keuninckx2017RealTime}.
+
+\vspace{0.5cm}
+
+Over the past years, Reservoir Computing models have evolved to compute signals faster and more accurately \cite{goldmann2020deep, holzmann2009reservoir, Appeltant2011Information}. The integration of filter neurons (such as band-pass filters or leaky integrators) \cite{Jaeger10ESN, wyffels2008band} has enabled networks to synchronize multiple time scales inherent complex signal \cite{Jaeger10ESN, wyffels2008band}. More recently, Delay-Line Reservoir Computers (DLRC) \cite{Keuninckx2017RealTime} and their deep cascaded variants (deepTRC) \cite{goldmann2020deep} have replaced the heavy matrices of neurons with a single non-linear node coupled to a delayed feedback loop using time-multiplexing \cite{holzmann2009reservoir}. These models allow for lesser algorithmic computation times, finally making it possible to process, correct, and distort audio signals in strict real-time on standard computing hardware. \cite{Keuninckx2017RealTime}.
+
+\vspace{0.5cm}
+
+This state-of-the-art review proposes discovering this paradigm in details. We will review the architectural foundations of Reservoir Computing, advanced optimization methods (such as Bayesian optimization of hyperparameters) to tune the dynamics of these models, and standard benchmarks used in literature (such as the Mackey-Glass system)\cite{mackey1977oscillation}.
+
+\subsection{Structure of the paper}
+
+This paper is structured as follows. Section 2 details the methodology used for this literature review, including our search queries and selection criteria. Section 3 formally defines the problem statement and explicitly states our core research questions regarding real-time constraints. Section 4 presents a comparative analysis of the state-of-the-art Reservoir Computing architectures, systematically evaluating their suitability against our required performance and latency metrics. Finally, Section 5 concludes the review.

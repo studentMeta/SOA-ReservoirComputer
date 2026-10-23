@@ -1,0 +1,269 @@
+% =============================================================================
+% BibTeX Entry Types Definition:
+% - article: Journal articles (e.g., Science, Nature).
+% - inproceedings: Conference papers (e.g., DAFx, IJCNN).
+% - book: Entire published books.
+% - techreport: Technical reports from institutions (e.g., GMD, Fraunhofer).
+% - phdthesis / mastersthesis: Academic dissertations.
+% - misc / online: Websites, software, or non-standard documents.
+% =============================================================================
+
+% Publishers 
+
+@String{ULB = "Universit\'e Libre de Bruxelles" }
+@String{Bruxelles = "Bruxelles, Belgique" }
+@String{UNamur = "Universit\'e de Namur" }
+@String{Namur = "Namur, Belgique" }
+@String{Fraunhofer = "Fraunhofer Institute for Autonomous Intelligent Systems" }
+@String{GMD = "German National Research Center for Information Technology" }
+
+% These de monsier Gulina ---------------------------------------------------------
+@Phdthesis{Gulina23Koopman,
+    author = {Marvyn Gulina},
+    title = {On the approximations of the Koopman operator and applications to spectral identification of networks},
+    school = {\UNamur, Faculty of Sciences, Department of Mathematics, Namur Institute for Complex Systems (naXys)},
+    address = Namur,
+    year = {2023},
+    month = oct,
+    note = {Advisor: Pr. Alexandre Mauroy. Co-Advisor: Pr. Timoteo Carletti. Jury: Pr. Joseph J. Winkin (President), Pr. Julien M. Hendrickx, Dr. rer. nat. Felix Dietrich.},
+}
+
+@Masterthesis{Gulina17Chaos,
+    author = {Marvyn Gulina},
+    title = {Utilisation d'un ordinateur r\'eservoir pour d\'ecrypter un message transmis via la cryptographie par chaos},
+    school = {\ULB},
+    address = Bruxelles,
+    year = {2017},
+    type = {Master's Thesis in Physics},
+    note = {Sous la direction du Professeur Serge Massar},
+}
+
+% ESN paper fundational paper
+@Techreport{Jaeger10ESN,
+    author = {Herbert Jaeger},
+    title = {The ``echo state'' approach to analysing and training recurrent neural networks -- with an Erratum note},
+    institution = Fraunhofer,
+    year = {2010},
+    month = jan,
+    note = {This is a corrected version of the original technical report: H. Jaeger (2001): The ”echo state” approach to analysing and training recurrent neural networks, GMD Report 148, \GMD. The corrections are given in a new Erratum section which is added as an Appendix.},
+}
+
+% Travail université de bordeau
+@InProceedings{Trouvain2020ReservoirPy,
+    author = {Nathan Trouvain and Luca Pedrelli and Thanh Trung Dinh and Xavier Hinaut},
+    title = {{ReservoirPy}: an Efficient and User-Friendly Library to Design {Echo State Networks}},
+    year = {2020},
+    month = sep,
+    note = {HAL Id: hal-02595026. Available at https://inria.hal.science/hal-02595026v2},
+}
+
+% Guitar electric amplifier
+@Article{Keuninckx2017RealTime,
+    author = {Lars Keuninckx and Jan Danckaert and Guy Van der Sande},
+    title = {Real-time Audio Processing with a Cascade of Discrete-Time Delay Line-Based Reservoir Computers},
+    journal = {Cognitive Computation},
+    volume = {9},
+    number = {3},
+    pages = {315--326},
+    year = {2017},
+    month = jun,
+    publisher = {Springer},
+    doi = {10.1007/s12559-017-9457-5},
+}
+
+% Single dynamical node
+@Article{Appeltant2011Information,
+    author = {Lennert Appeltant and Maria C. Soriano and Guy Van der Sande and Jan Danckaert and Serge Massar and Joni Dambre and Benjamin Schrauwen and Claudio R. Mirasso and Ingo Fischer},
+    title = {Information processing using a single dynamical node as complex system},
+    journal = {Nature Communications},
+    volume = {2},
+    number = {1},
+    pages = {468},
+    year = {2011},
+    month = sep,
+    publisher = {Nature Publishing Group},
+    doi = {10.1038/ncomms1476},
+}
+
+% dernier travail sur la next gen
+@article{Gauthier2021,
+  author  = {Gauthier, Daniel J. and Bollt, Erik and Griffith, Aaron and Barbosa, Wendson A. S.},
+  title   = {Next-generation reservoir computing},
+  journal = {Nature Communications},
+  year    = {2021},
+  volume  = {12},
+  number  = {1},
+  pages   = {5564},
+  doi     = {10.1038/s41467-021-25801-2}
+}
+
+%Deep reservoir computer
+@article{Gallicchio2017,
+  author = {Gallicchio, Claudio and Micheli, Alessio and Pedrelli, Luca},
+  title = {Deep reservoir computing: A critical experimental analysis},
+  journal = {Neurocomputing},
+  volume  = {268},
+  pages   = {87--99},
+  year = {2017},
+  doi     = {10.1016/j.neucom.2016.12.089}
+}
+
+% OPtimisation de Hyperparamètres
+@article{yperman2016bayesian,
+  author  = {Yperman, Jan and Becker, Thijs},
+  title   = {Bayesian optimization of hyper-parameters in reservoir computing},
+  journal = {Neurocomputing},
+  volume  = {213},
+  pages   = {110--116},
+  year    = {2016},
+  doi     = {10.1016/j.neucom.2016.05.048},
+  url     = {https://doi.org/10.1016/j.neucom.2016.05.048},
+  keywords = {reservoir computing, hyper-parameter optimization, Gaussian processes, Bayesian statistics},
+  abstract = {We describe a method for searching the optimal hyper-parameters in reservoir computing, which consists of a Gaussian process with Bayesian optimization.}
+}
+
+% Filter neurons + delay and sum readout
+@article{holzmann2010echo,
+  author  = {Holzmann, Georg and Hauser, Helmut},
+  title   = {Echo state networks with filter neurons and a delay\&sum readout},
+  journal = {Neural Networks},
+  volume  = {23},
+  pages   = {244--256},
+  year    = {2010},
+  doi     = {10.1016/j.neunet.2009.07.004},
+  url     = {https://doi.org/10.1016/j.neunet.2009.07.004}
+}
+
+% Band pass reservoir computer 
+@inproceedings{wyffels2008band,
+  author    = {Wyffels, Francis and Schrauwen, Benjamin and Verstraeten, David and Stroobandt, Dirk},
+  title     = {Band-pass reservoir computing},
+  booktitle = {2008 International Joint Conference on Neural Networks (IJCNN 2008)},
+  publisher = {IEEE},
+  pages     = {3204--3209},
+  year      = {2008},
+  doi       = {10.1109/IJCNN.2008.4634252}
+}
+
+% Intrinsec plasticity
+@article{schrauwen2008improving,
+  author  = {Schrauwen, Benjamin and Wardermann, Marion and Verstraeten, David and Steil, Jochen J. and Stroobandt, Dirk},
+  title   = {Improving reservoirs using intrinsic plasticity},
+  journal = {Neurocomputing},
+  volume  = {71},
+  pages   = {1159--1171},
+  year    = {2008},
+  doi     = {10.1016/j.neucom.2007.12.020}
+}
+
+% Intrinsic plasticity
+@inproceedings{triesch2005gradient,
+  title={A gradient rule for the plasticity of a neuron's intrinsic excitability},
+  author={Triesch, Jochen},
+  booktitle={International Conference on Artificial Neural Networks},
+  pages={65--70},
+  year={2005},
+  organization={Springer}
+}
+
+% Deep time-delay
+@article{goldmann2020deep,
+  author  = {Goldmann, M. and K{\"o}ster, F. and L{\"u}dge, K. and Yanchuk, S.},
+  title   = {Deep time-delay reservoir computing: Dynamics and memory capacity},
+  journal = {Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  volume  = {30},
+  number  = {9},
+  pages   = {093124},
+  year    = {2020},
+  doi     = {10.1063/5.0017974}
+}
+
+% Mackey Glass attractor
+@article{mackey1977oscillation,
+  title={Oscillation and chaos in physiological control systems},
+  author={Mackey, M. C. and Glass, L.},
+  journal={Science},
+  volume={197},
+  number={4300},
+  pages={287--289},
+  year={1977}
+}
+
+% permiere tentative real time
+@inproceedings{holzmann2009reservoir,
+  title={Reservoir computing: a powerful black-box framework for nonlinear audio processing},
+  author={Holzmann, Georg},
+  booktitle={Proceedings of the 12th International Conference on Digital Audio Effects (DAFx-09)},
+  pages={90--97},
+  year={2009}
+}
+
+% LSM
+@article{maass2002realtime,
+  title={Real-time computing without stable states: A new framework for neural computation based on perturbations},
+  author={Maass, Wolfgang and Natschl{\"a}ger, Thomas and Markram, Henry},
+  journal={Neural Computation},
+  volume={14},
+  number={11},
+  pages={2531--2560},
+  year={2002},
+  publisher={MIT Press},
+  doi = {10.1162/089976602760407955}
+}
+
+% Bible de composition du son
+@book{zolzer2002dafx,
+  title={DAFX: Digital Audio Effects},
+  editor={Z{\"o}lzer, Udo},
+  year={2002},
+  publisher={John Wiley \& Sons},
+  isbn={978-0-470-66599-2}
+}
+
+% livre perso timeseries python
+@book{peixeiro2022time,
+  title={Time Series Forecasting in Python},
+  author={Peixeiro, Marco},
+  year={2022},
+  publisher={Manning}
+}
+
+% Volterra kernel
+@article{gonon2025reservoir,
+  title={Reservoir kernels and Volterra series},
+  author={Gonon, Lukas and Grigoryeva, Lyudmila and Ortega, Juan-Pablo},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2025},
+  month={September},
+  doi = {10.1109/TNNLS.2024.3364344}
+}
+
+% Tentative correction singal cellulaire
+@article{jaeger2007optimization,
+  title={Optimization and applications of echo state networks with leaky-integrator neurons},
+  author={Jaeger, Herbert and Luko{\v{s}}evi{\v{c}}ius, Mantas and Popovici, Dan and Siewert, Udo},
+  journal={Neural Networks},
+  volume={20},
+  year={2007},
+  publisher={Elsevier Ltd},
+  doi={10.1016/j.neunet.2007.04.016}
+}
+
+% Gentil papier sur implémentation ESN
+@techreport{jaeger2002tutorial,
+  title={A tutorial on training recurrent neural networks, covering BPPT, RTRL, EKF and the "echo state network" approach},
+  author={Jaeger, Herbert},
+  number={GMD Report 159},
+  institution={German National Research Center for Information Technology},
+  year={2002},
+}
+
+% tentative cellulaire
+@article{jaeger2004harnessing,
+  title={Harnessing Nonlinearity: Predicting Chaotic Systems and Saving Energy in Wireless Communication},
+  journal={Science},
+  author={Jaeger, Herbert and Haas, Harald},
+  year={2004},
+  publisher={American Association for the Advancement of Science},
+  doi={10.1126/science.1091277}
+}

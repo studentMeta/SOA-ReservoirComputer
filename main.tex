@@ -1,0 +1,83 @@
+\documentclass[a4paper]{scrartcl}
+
+\usepackage[square,numbers]{natbib}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\graphicspath{{images/}}
+
+\newcommand{\UNamur}{University of Namur}
+\newcommand{\GMD}{GMD}
+
+\begin{document}
+	
+\pagenumbering{gobble}
+
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+		
+		{\LARGE \textbf{State-of-the-art}}
+		
+		\vspace{0.5cm}
+		
+		{\LARGE \textit{Reservoir Computing} applied to \textit{Audio Signal} with a focus on \textit{Real-time Distortion}}
+		
+		\vspace{1.5cm}
+		
+		\textbf{Author : Timothy Lefebvre }
+		
+		\vspace{0.5cm}
+		
+		\textbf{Supervisor : Marvyn Gulina}
+		
+		\vfill
+		
+				State-of-the-Art Research Report
+		
+		\vspace{0.8cm}
+		
+		\includegraphics[width=0.3\textwidth]{unamur}
+		
+		Faculty of Computer Science\\
+		University of Namur\\
+		Belgium\\
+		2025-2026
+	\end{center}
+\end{titlepage}
+
+\newpage
+
+\input{abstract.tex}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\pagenumbering{arabic}
+
+%%
+%% Text Body
+\input{intro}
+\input{problem_statement}
+\input{methodo}
+\input{state_of_art}
+
+
+\newpage
+\nocite{*}
+
+%%
+%% References
+\bibliographystyle{ACM-Reference-Format} % Bibliographic Style Definition
+\bibliography{references, references_web} % Source file containing bibliographic references in BibTex format
+
+
+\end{document}
